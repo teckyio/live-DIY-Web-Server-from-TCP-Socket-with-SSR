@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loading">loading style and script</div>
+    <form action="/memo" method="post">
+      <div class="input-group">
+        <label for="title">memo title:</label>
+        <input type="text" name="title" id="title" />
+      </div>
+
+      <div class="input-group">
+        <label for="content">content:</label>
+        <input type="text" name="content" id="content" />
+      </div>
+
+      <input type="submit" value="Submit Memo" />
+    </form>
+
+    <template id="memoTemplate">
+      <div class="memo">
+        <div class="title"></div>
+        <div class="content"></div>
+      </div>
+    </template>
+    <div id="memoList"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
